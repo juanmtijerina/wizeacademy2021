@@ -1,0 +1,19 @@
+{
+  "name": "challenge_one",
+  "version": "1.0.0",
+  "description": "JMT Challenge One of Wizeline Academy 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmtijerina/wizeacademy2021.git"
+  },
+  "author": "Juan Manuel Tijerina Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanmtijerina/wizeacademy2021/issues"
+  },
+  "homepage": "https://github.com/juanmtijerina/wizeacademy2021#readme"
+}
