@@ -12,11 +12,11 @@ fixture('Login feature test')
 
 test('Users can login using valid credentials', async t => {
     await t
-        .typeText(LoginPage.userName, CREDENTIALS.VALID_USER.USERNAME), {pass:true}
-        .typeText(LoginPage.userPass, CREDENTIALS.VALID_USER.PASSWORD), {pass:true}
+        .typeText(LoginPage.userName, CREDENTIALS.VALID_USER.USERNAME)
+        .typeText(LoginPage.userPass, CREDENTIALS.VALID_USER.PASSWORD) 
         .click(LoginPage.loginButton)
     
-        await t.expect(MyNotesPage.pageTitle.exist).ok()
+        await t.expect(MyNotesPage.pageTitle.exists).ok()
 
 })
 
