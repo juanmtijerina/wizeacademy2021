@@ -25,6 +25,7 @@ export const USERINFO = {
         FIRSTNAME:'JOHN',
         LASTNAME:'SCIZORWITZ',
         ZIPCODE:'8909890',
-        ZIPERROR: 'Postal Code is required'
+        ZIPERROR: 'Postal Code is required',
+        CHECKOUTM: 'Checkout: Overview'
     },
 }

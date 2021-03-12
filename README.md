@@ -14,3 +14,12 @@ Challenge to automate the workflows of the SauceLabs test page
 5 - Add a single item to the shopping cart (Verify an item is present in the cart)
 6 - Add multiple items to the shopping cart (Verify an items are present in the cart)
 7 - Invalid zipcode in the checkout information page (Verify the error message is displayed)
+8 - Verify the payment overview page (Verify the overview page is opened)
+9 - Verify item in the overview page (Verify the item's details)
+10 - Complete the workflow and reach the final page (End to End test to complete the purchase)
+
+
+Additionals:
+
+Execute test in multi-browser with an output reporter.
+testcafe chrome,firefox finalsale.test.js --reporter html:../reports/finaltest.html

@@ -1,6 +1,6 @@
 import {Selector} from 'testcafe'
 
-class LoginPage {
+class ProductPage {
     constructor(){
         this.productPageTitle = Selector('.product_label')
         this.hambuerguerMenu = Selector('#react-burger-menu-btn')
@@ -12,4 +12,4 @@ class LoginPage {
       }
 }
 
-export default new LoginPage()
+export default new ProductPage()

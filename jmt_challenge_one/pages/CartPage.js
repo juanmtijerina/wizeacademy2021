@@ -1,6 +1,6 @@
 import {Selector} from 'testcafe'
 
-class LoginPage {
+class CartPage {
     constructor(){
         this.cartPageTitle = Selector('.subheader')
         this.itemName1 = Selector('#item_4_title_link .inventory_item_name')
@@ -10,4 +10,4 @@ class LoginPage {
     }
 }
 
-export default new LoginPage()
+export default new CartPage()

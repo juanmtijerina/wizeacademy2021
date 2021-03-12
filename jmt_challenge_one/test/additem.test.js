@@ -5,13 +5,13 @@ import { CREDENTIALS } from '../data/Constants'
 import { PRODUCTS } from '../data/Constants'
 
 
-fixture('Login feature test')
+fixture('Add item to cart test')
     .page `https://www.saucedemo.com/`
     .beforeEach(async t => {
         await t.click(LoginPage.loginButton)
 })
 
-test('Users can login using valid credentials', async t => {
+test('Users can add an item to shopping cart', async t => {
     await t
         .maximizeWindow()
         .typeText(LoginPage.userName, CREDENTIALS.VALID_USER.USERNAME)

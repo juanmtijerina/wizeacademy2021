@@ -4,13 +4,13 @@ import CartPage from '../pages/CartPage'
 import { CREDENTIALS } from '../data/Constants'
 
 
-fixture('Login feature test')
+fixture('View shopping cart test')
     .page `https://www.saucedemo.com/`
     .beforeEach(async t => {
         await t.click(LoginPage.loginButton)
 })
 
-test('Users can login using valid credentials', async t => {
+test('Users can open the shopping cart', async t => {
     await t
         .maximizeWindow()
         .typeText(LoginPage.userName, CREDENTIALS.VALID_USER.USERNAME)

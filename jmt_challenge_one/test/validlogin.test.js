@@ -3,7 +3,7 @@ import ProductsPage from '../pages/ProductsPage'
 import { CREDENTIALS } from '../data/Constants'
 
 
-fixture('Login feature test')
+fixture('Valid login feature test')
     .page `https://www.saucedemo.com/`
     .beforeEach(async t => {
         await t.click(LoginPage.loginButton)
