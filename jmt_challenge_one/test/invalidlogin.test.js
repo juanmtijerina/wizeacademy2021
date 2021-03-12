@@ -12,10 +12,10 @@ fixture('Login feature test')
 test('Users can login using valid credentials', async t => {
     await t
         .maximizeWindow()
-        .typeText(LoginPage.userName, CREDENTIALS.VALID_USER.USERNAME)
-        .typeText(LoginPage.userPass, CREDENTIALS.VALID_USER.PASSWORD) 
+        .typeText(LoginPage.userName, CREDENTIALS.INVALID_USER.USERNAME)
+        .typeText(LoginPage.userPass, CREDENTIALS.INVALID_USER.PASSWORD) 
         .click(LoginPage.loginButton)
     
-        await t.expect(ProductsPage.productPageTitle.exists).ok()
+        await t.expect(LoginPage.errorMessage.exists).ok()
 
 })
