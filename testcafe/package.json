@@ -1,0 +1,14 @@
+{
+  "name": "wizeworkshop",
+  "version": "1.0.0",
+  "description": "Testcafe project 1",
+  "main": "index.js",
+  "scripts": {
+    "test-all-chrome": "testcafe chrome ./page_model/test"
+  },
+  "author": "Juan Tijerina",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
