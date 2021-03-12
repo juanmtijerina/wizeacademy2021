@@ -6,3 +6,4 @@ Examples provided during the first training session.
 Using HTML reporter.
 
 Project: jmt_challenge_one
+Challenge to automate the workflows of the SauceLabs test page
