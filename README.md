@@ -11,3 +11,6 @@ Challenge to automate the workflows of the SauceLabs test page
 2 - Invalid loging (Verify login's error message)
 3 - Logout from products page (Verify login's logo is displayed)
 4 - Open the shopping cart (Verify cart page's title)
+5 - Add a single item to the shopping cart (Verify an item is present in the cart)
+6 - Add multiple items to the shopping cart (Verify an items are present in the cart)
+7 - Invalid zipcode in the checkout information page (Verify the error message is displayed)
