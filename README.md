@@ -22,4 +22,4 @@ Challenge to automate the workflows of the SauceLabs test page
 Additionals:
 
 Execute test in multi-browser with an output reporter.
-testcafe chrome,firefox finalsale.test.js --reporter html:../reports/finaltest.html
+testcafe chrome,firefox 10_finalsale.test.js --reporter html:../reports/finaltest.html
