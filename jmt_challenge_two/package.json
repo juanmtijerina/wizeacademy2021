@@ -1,0 +1,11 @@
+{
+  "name": "nmpmpackage",
+  "version": "1.0.0",
+  "description": "Second challenge in the Wizeline Academy training course",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run '/home/oxblast/wizeacademy2021/jmt_challenge_two/collections/JMT_2nd_Assessment.postman_collection.json' -e '/home/oxblast/wizeacademy2021/jmt_challenge_two/environments/QA - WZ.postman_environment.json' -d '/home/oxblast/wizeacademy2021/jmt_challenge_two/data/newtask.csv' -r htmlextra --reporter-htmlextra-export '/home/oxblast/wizeacademy2021/jmt_challenge_two/reports'"
+  },
+  "author": "Juan Tijerina",
+  "license": "ISC"
+}
