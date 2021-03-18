@@ -1,0 +1,1 @@
+newman run /home/oxblast/wizeacademy2021/Postman/JMT_2nd_Assessment.postman_collection.json -e '/home/oxblast/wizeacademy2021/Postman/QA - WZ.postman_environment.json' -d '/home/oxblast/wizeacademy2021/Postman/newtask.csv' -r htmlextra --reporter-htmlextra-export '/home/oxblast/wizeacademy2021/Postman/results/report.html'
