@@ -25,8 +25,7 @@ Execute test in multi-browser with HTML reporter.
 command: testcafe chrome,firefox 10_finalsale.test.js --reporter html:../reports/finaltest.html
 
 
-Project: jmt_challenge_two
-Challenge in Postman and Newman
+Project: Postman
 Postman Cases:
 1.Get_Active_Tasks_PositiveScenario
 2.Post_New_Task_PositiveScenario
