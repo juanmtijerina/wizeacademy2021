@@ -18,12 +18,11 @@ Challenge to automate the workflows of the SauceLabs test page
 9 - Verify item in the overview page (Verify the item's details)
 10 - Complete the workflow and reach the final page (End to End test to complete the purchase)
 
-
 Additionals:
-
 Execute test in multi-browser with HTML reporter.
 command: testcafe chrome,firefox 10_finalsale.test.js --reporter html:../reports/finaltest.html
 
+______________________________________________________________________________________________________________________
 
 Project: Postman
 Postman Cases:
@@ -39,9 +38,12 @@ Postman Cases:
 7.Post_Delete_Task_PositiveScenario
 7.1.Post_Delete_Task_NegativeScenario
 
-Newman Execution:
+Project: jmt_challenge_two
+Create a new nodejs project and import the postman files to execute them with newman. Report generated with reporter-htmlextra.
+File structure: Project - collections - environments - data - reports
+Updated test in the package.json : newman run '/home/oxblast/wizeacademy2021/jmt_challenge_two/collections/JMT_2nd_Assessment.postman_collection.json' -e '/home/oxblast/wizeacademy2021/jmt_challenge_two/environments/QA - WZ.postman_environment.json' -d '/home/oxblast/wizeacademy2021/jmt_challenge_two/data/newtask.csv' -r htmlextra --reporter-htmlextra-export '/home/oxblast/wizeacademy2021/jmt_challenge_two/reports'
 
-
-Jenkins Integration:
+Jenkins Integration: 
+Created a local jenkins implementation.
 Created a new jenkins project.
-Integrated a reporter for results.
+Integrated an XML reporter for results.
