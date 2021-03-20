@@ -1,0 +1,42 @@
+config:
+  target: "https://api.todoist.com/rest/v1"
+  phases:
+    - duration: 5
+      arrivalRate: 1
+      name: BasicLoad
+  defaults:
+    headers:
+      Authorization: Bearer {{ $processEnvironment.TOKEN }}
+      Content-type: application/json
+scenarios:
+  # Wizeline Academy Challenge 3
+  - name: "Todoist Basic CRUD"
+    flow:
+    #Get existing tasks
+      - get:
+          url: "/tasks"
+    #Create a new task
+      - post:
+          url: "/tasks"
+          body: '{ "content": "Task X", "due_date": "2021-09-01", "due_lang": "en",  "priority": 4, "project_id": 2261210765}'  
+          capture:
+            json: "$.id"
+            as: "id"
+    #Log the id of the created task
+      - log: "Task created with the id: {{ id }}"
+    #Check the task was created
+      - get:
+          url: "/tasks/{{ id }}"
+    #Update the created task
+      - post:
+          url: "/tasks/{{ id }}"
+          body: '{"content": "Updated Task"}'
+    #Complete task
+      - post:
+          url: "/tasks/{{ id }}/close"
+    #Reopen task
+      - post:
+          url: "/tasks/{{ id }}/reopen"
+    #Delete task
+      - delete:
+          url: "/tasks/{{ id }}"

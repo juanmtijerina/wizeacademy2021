@@ -1,0 +1,97 @@
+{
+  "aggregate": {
+    "timestamp": "2021-03-20T02:51:53.289Z",
+    "scenariosCreated": 5,
+    "scenariosCompleted": 5,
+    "requestsCompleted": 10,
+    "latency": {
+      "min": 358.4,
+      "max": 459.2,
+      "median": 400.9,
+      "p95": 459.2,
+      "p99": 459.2
+    },
+    "rps": {
+      "count": 10,
+      "mean": 2.02
+    },
+    "scenarioDuration": {
+      "min": 773.6,
+      "max": 948.7,
+      "median": 789.9,
+      "p95": 948.7,
+      "p99": 948.7
+    },
+    "scenarioCounts": {
+      "Artillery with Faker": 5
+    },
+    "errors": {},
+    "codes": {
+      "200": 5,
+      "204": 5
+    },
+    "matches": 0,
+    "customStats": {},
+    "counters": {},
+    "scenariosAvoided": 0,
+    "phases": [
+      {
+        "duration": 5,
+        "arrivalRate": 1,
+        "name": "BasicLoad"
+      }
+    ]
+  },
+  "intermediate": [
+    {
+      "timestamp": "2021-03-20T02:51:53.286Z",
+      "scenariosCreated": 5,
+      "scenariosCompleted": 5,
+      "requestsCompleted": 10,
+      "latency": {
+        "min": 358.4,
+        "max": 459.2,
+        "median": 400.9,
+        "p95": 459.2,
+        "p99": 459.2
+      },
+      "rps": {
+        "count": 10,
+        "mean": 2.02
+      },
+      "scenarioDuration": {
+        "min": 773.6,
+        "max": 948.7,
+        "median": 789.9,
+        "p95": 948.7,
+        "p99": 948.7
+      },
+      "scenarioCounts": {
+        "Artillery with Faker": 5
+      },
+      "errors": {},
+      "codes": {
+        "200": 5,
+        "204": 5
+      },
+      "matches": 0,
+      "latencies": [
+        422198111,
+        447745868,
+        402598594,
+        358441162,
+        459226731,
+        393559507,
+        399267232,
+        370785382,
+        416328844,
+        363440224
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 0,
+      "pendingRequests": 0,
+      "scenariosAvoided": 0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "artillerypackage",
+  "version": "1.0.0",
+  "description": "Third challenge of the Wizeline Academy training. Using Artillery.io and FakerJS.",
+  "main": "index.js",
+  "scripts": {
+    "testCRUD": "artillery run --output ./crudresults/crudReport.json artilleryTodoist.yml && artillery report --output ./crudresults/crudReport.html ./crudresults/crudReport.json",
+    "testFAKE": "artillery run --output ./fakeresults/fakeReport.json fakeTodoist.yml && artillery report --output ./fakeresults/fakeReport.html ./fakeresults/fakeReport.json"
+  },
+  "author": "Juan Tijerina",
+  "license": "ISC"
+}

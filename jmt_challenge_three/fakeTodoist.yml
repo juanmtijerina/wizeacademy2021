@@ -1,0 +1,31 @@
+config:
+  target: "https://api.todoist.com/rest/v1"
+  phases:
+    - duration: 5
+      arrivalRate: 1
+      name: BasicLoad
+  plugins:
+    faker:
+      locale: en
+  variables:
+    firstName: "$faker.name.firstName"
+    date: "$faker.date.future"
+  defaults:
+    headers:
+      Authorization: Bearer {{ $processEnvironment.TOKEN }}
+      Content-type: application/json
+scenarios:
+  # Wizeline Academy Challenge 3 with Faker
+  - name: "Artillery with Faker"
+    flow:
+    #Create a new task with faker
+      - post:
+          url: "/tasks"
+          body: '{ "content": "Meeting with {{ firstName }}", "due_datetime": {{ date }}, "due_lang": "en",  "priority": 4, "project_id": 2261210765}'  
+          capture:
+            json: "$.id"
+            as: "id"
+      - log: "Create meeting {{ id }}  with {{ firstName }} on {{ date }}"
+    #Delete task
+      - delete:
+          url: "/tasks/{{ id }}"
