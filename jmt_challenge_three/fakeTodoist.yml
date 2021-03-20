@@ -29,3 +29,4 @@ scenarios:
     #Delete task
       - delete:
           url: "/tasks/{{ id }}"
+      - log: "Deleting meeting {{ id }}  with {{ firstName }} on {{ date }}"

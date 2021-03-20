@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "timestamp": "2021-03-20T02:51:53.289Z",
+    "timestamp": "2021-03-20T03:04:29.113Z",
     "scenariosCreated": 5,
     "scenariosCompleted": 5,
     "requestsCompleted": 10,
     "latency": {
-      "min": 358.4,
-      "max": 459.2,
-      "median": 400.9,
-      "p95": 459.2,
-      "p99": 459.2
+      "min": 236,
+      "max": 474.1,
+      "median": 405.2,
+      "p95": 474.1,
+      "p99": 474.1
     },
     "rps": {
       "count": 10,
       "mean": 2.02
     },
     "scenarioDuration": {
-      "min": 773.6,
-      "max": 948.7,
-      "median": 789.9,
-      "p95": 948.7,
-      "p99": 948.7
+      "min": 723.9,
+      "max": 887.4,
+      "median": 815.3,
+      "p95": 887.4,
+      "p99": 887.4
     },
     "scenarioCounts": {
       "Artillery with Faker": 5
@@ -44,27 +44,27 @@
   },
   "intermediate": [
     {
-      "timestamp": "2021-03-20T02:51:53.286Z",
+      "timestamp": "2021-03-20T03:04:29.110Z",
       "scenariosCreated": 5,
       "scenariosCompleted": 5,
       "requestsCompleted": 10,
       "latency": {
-        "min": 358.4,
-        "max": 459.2,
-        "median": 400.9,
-        "p95": 459.2,
-        "p99": 459.2
+        "min": 236,
+        "max": 474.1,
+        "median": 405.2,
+        "p95": 474.1,
+        "p99": 474.1
       },
       "rps": {
         "count": 10,
         "mean": 2.02
       },
       "scenarioDuration": {
-        "min": 773.6,
-        "max": 948.7,
-        "median": 789.9,
-        "p95": 948.7,
-        "p99": 948.7
+        "min": 723.9,
+        "max": 887.4,
+        "median": 815.3,
+        "p95": 887.4,
+        "p99": 887.4
       },
       "scenarioCounts": {
         "Artillery with Faker": 5
@@ -76,16 +76,16 @@
       },
       "matches": 0,
       "latencies": [
-        422198111,
-        447745868,
-        402598594,
-        358441162,
-        459226731,
-        393559507,
-        399267232,
-        370785382,
-        416328844,
-        363440224
+        405339106,
+        405100448,
+        413116791,
+        361357304,
+        449208313,
+        364744972,
+        474051002,
+        236031895,
+        408946780,
+        395471364
       ],
       "customStats": {},
       "counters": {},

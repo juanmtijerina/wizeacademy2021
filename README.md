@@ -47,3 +47,12 @@ Jenkins Integration:
 Created a local jenkins implementation.
 Created a new jenkins project.
 Integrated an XML reporter for results.
+
+______________________________________________________________________________________________________________________
+
+Project: jmt_challenge_three
+Artillery Cases: CRUD (artilleryTodoist) and FAKE (fakeTodoist)
+CRUD - Basic create, read, update and delete using Artillery.
+FAKE - Basic create and delete using randomly generated values with fake JS.
+Package: contains 2 tests, testFAKE and testCRUD.
+Todoist TOKEN needs to be provided as an environment variable in order to run the scripts.

@@ -40,3 +40,4 @@ scenarios:
     #Delete task
       - delete:
           url: "/tasks/{{ id }}"
+      - log: "Deleted task with the id: {{ id }}"
